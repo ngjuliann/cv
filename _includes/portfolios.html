@@ -1,21 +1,51 @@
     <!-- Portfolio Section -->
 <section id="portfolio" class="container content-section text-center">
+	
+
+	
 <div class="container">
+	<!--
 	<div class="row previews">
-		{% for post in site.categories.portfolios %}
-		<div class="col-lg-4 col-sm-6">
+		{% for portfolio in site.portfolio %}
+		
+			><div class="col-lg-4 col-sm-6">
 			<div class="thumbnail">
-				<a href="{{ post.source }}" class="post-image-link">
-					{{ post.content }}
+				<a href="{{ portfolio.source }}" class="portfolio-image-link">
+					{{ portfolio.content }}
 				</a>
 				<div class="caption">
-					<h3>{{ post.title }}</h3>
-					<p>{{ post.description }}</p>
-					<a href="{{ post.source }}" class="btn btn-default">Preview &amp; Download</a>
+					<h3>{{ portfolio.title }}</h3>
+					<p>{{ portfolio.description }}</p>
+					<a href="{{ portfolio.source }}" class="btn btn-default">Preview &amp; Download</a>
 				</div>
 			</div>
 		</div>	  
 		{% endfor %}
+			
 	</div>
+	-->
+		<div class="row preview">
+
+		  {% for portfolio in site.portfolio %}
+    
+		    <a href="{{ portfolio.url | prepend: site.baseurl }}">
+		      <div class="col-xs-12 col-sm-6 col-md-4">
+		        <div class="panel panel-primary">
+		          <div class="panel-heading">
+		              <h2>{{ portfolio.title }}</h2>
+		          </div>
+		          <div class="panel-body">
+					 <img class="img-responsive" src={{portfolio.image}}>
+		            {{ portfolio.excerpt }}
+		          </div>
+		        </div>
+		      </div>
+		    </a>
+
+		  {% endfor %}
+
+		</div>
+		
+		
 </div>
 </section>

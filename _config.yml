@@ -25,6 +25,15 @@ social:
   - title: github
     url: 
 
+#Each Portfolio gets it's own url
+collections:
+    portfolio:
+      output: true
+      permalink: /portfolio/:path/
+
+
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+
