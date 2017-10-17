@@ -1,6 +1,6 @@
 ---
 title: "Julian Ng - Resume"
-description: Last updated December 2015
+description: Last updated Oct 2017
 layout: pdf
 permalink: /resume/
 
