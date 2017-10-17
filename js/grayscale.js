@@ -41,7 +41,7 @@ function init() {
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(-37.9701542, 144.4926972), // New York
+        center: new google.maps.LatLng(-37.813644, 144.963009), // New York
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
